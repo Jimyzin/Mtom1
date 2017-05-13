@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+    <deployment>
+        <dependencies>
+            <!--
+            we want to use the saaj module provided by JBoss
+            it looks like we can't use the implementation provided by the JDK - JBoss somehow does not seem to allow it
+            -->
+            <module name="com.sun.xml.messaging.saaj" />
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>
